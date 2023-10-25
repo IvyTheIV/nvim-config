@@ -114,8 +114,9 @@ require('lazy').setup({
         },
     },
 
+    -- Colorschemes
     {
-        -- Color theme
+        -- kanagawa, my beloved
         'rebelot/kanagawa.nvim',
         priority = 1000,
         opts = {
@@ -124,6 +125,8 @@ require('lazy').setup({
             keywordStyle = { italic = false },
         },
     },
+    -- has some actually good light themes so that I could burn my retina.
+    'https://gitlab.com/protesilaos/tempus-themes-vim.git',
 
     -- "gc" to comment visual regions/lines
     { 'numToStr/Comment.nvim', opts = {} },
