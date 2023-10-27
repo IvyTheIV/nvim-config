@@ -29,6 +29,7 @@ vim.keymap.set('n', '<leader>/', function()
     })
 end, { desc = '[/] Search in current buffer' })
 
+vim.keymap.set('n', '<leader>?', require('telescope.builtin').keymaps, {desc = '[?] Search Keymap'})
 vim.keymap.set('n', '<leader>fgf', require('telescope.builtin').git_files, { desc = '[F]ind [G]it [F]iles' })
 vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, { desc = '[F]ind [F]iles' })
 vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags, { desc = '[F]ind [H]elp' })

@@ -70,6 +70,13 @@ require('lazy').setup({
         },
     },
 
+    {
+        -- Automatically match parentheses
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        opts = {},
+    },
+
     -- Useful plugin to show you pending keybinds.
     -- { 'folke/which-key.nvim', opts = {} },
     {
@@ -125,7 +132,7 @@ require('lazy').setup({
             keywordStyle = { italic = false },
         },
     },
-    -- has some actually good light themes so that I could burn my retina.
+    -- has some actually good light themes so that I could burn my retinas.
     'https://gitlab.com/protesilaos/tempus-themes-vim.git',
 
     -- "gc" to comment visual regions/lines
