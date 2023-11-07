@@ -66,7 +66,7 @@ require('lazy').setup({
             'hrsh7th/cmp-buffer',
 
             -- Adds a number of user-friendly snippets
-            'rafamadriz/friendly-snippets',
+            -- 'rafamadriz/friendly-snippets',
         },
     },
 
@@ -99,18 +99,18 @@ require('lazy').setup({
 
                 -- don't override the built-in and fugitive keymaps
                 local gs = package.loaded.gitsigns
-                vim.keymap.set({ 'n', 'v' }, ']c', function()
+                vim.keymap.set({ 'n', 'v' }, ']h', function()
                     if vim.wo.diff then
-                        return ']c'
+                        return ']h'
                     end
                     vim.schedule(function()
                         gs.next_hunk()
                     end)
                     return '<Ignore>'
                 end, { expr = true, buffer = bufnr, desc = 'Jump to next hunk' })
-                vim.keymap.set({ 'n', 'v' }, '[c', function()
+                vim.keymap.set({ 'n', 'v' }, '[h', function()
                     if vim.wo.diff then
-                        return '[c'
+                        return '[h'
                     end
                     vim.schedule(function()
                         gs.prev_hunk()
@@ -166,5 +166,10 @@ require('lazy').setup({
             'nvim-treesitter/nvim-treesitter-textobjects',
         },
         build = ':TSUpdate',
+    },
+
+    {
+        -- Show current context
+        'nvim-treesitter/nvim-treesitter-context',
     },
 }, {})

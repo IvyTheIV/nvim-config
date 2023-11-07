@@ -72,6 +72,8 @@ local servers = {
     -- NOTE: This is specific to my machine! Make sure to change the path.
     zls = {
         cmd = { "/home/ivy/Projects/zig/zls/zig-out/bin/zls" },
+        warn_style = true,
+        enable_snippets = false,
     },
 
     lua_ls = {
