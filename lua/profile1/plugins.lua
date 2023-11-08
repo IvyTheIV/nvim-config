@@ -172,4 +172,8 @@ require('lazy').setup({
         -- Show current context
         'nvim-treesitter/nvim-treesitter-context',
     },
+
+    -- can your VSC**e do that? ψ(｀∇´)ψ
+    'eandrju/cellular-automaton.nvim',
+
 }, {})

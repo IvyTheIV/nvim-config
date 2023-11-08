@@ -38,3 +38,8 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous dia
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+
+-- useless stuff
+vim.keymap.set('n', '<M-r>', "<cmd>CellularAutomaton make_it_rain<CR>", { noremap = true, desc = 'Make it rain' })
+vim.keymap.set('n', '<M-s>', "<cmd>CellularAutomaton scramble<CR>", { noremap = true, desc = 'Scramble text' })
+vim.keymap.set('n', '<M-l>', "<cmd>CellularAutomaton game_of_life<CR>", { noremap = true, desc = 'Game of life, why' })

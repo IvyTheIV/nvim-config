@@ -2,7 +2,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-require('profile1.packages')
+require('profile1.plugins')
 require('profile1.settings')
 require('profile1.keymaps')
 require("profile1.telescope")
