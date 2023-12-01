@@ -62,7 +62,7 @@ require('mason-lspconfig').setup()
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
 local servers = {
-    clangd = {},
+    -- clangd = {},
     -- gopls = {},
     -- pyright = {},
     rust_analyzer = {},
@@ -71,7 +71,7 @@ local servers = {
 
     -- NOTE: This is specific to my machine! Make sure to change the path.
     zls = {
-        cmd = { "/home/ivy/Projects/zig/zls/zig-out/bin/zls" },
+        cmd = { "/home/ivy/Projects/programming/zig/zls/zig-out/bin/zls" },
         warn_style = true,
         enable_snippets = false,
     },
