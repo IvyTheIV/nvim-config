@@ -6,7 +6,7 @@ vim.defer_fn(function()
         ignore_install = {},
         sync_install = false,
         -- Add languages to be installed here that you want installed for treesitter
-        ensure_installed = { 'c', 'cpp', 'lua', 'rust', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash' },
+        ensure_installed = { 'c', 'cpp', 'lua', 'rust', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash', 'zig' },
         -- Autoinstall languages that are not installed
         auto_install = false,
 

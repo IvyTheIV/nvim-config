@@ -171,6 +171,9 @@ require('lazy').setup({
     {
         -- Show current context
         'nvim-treesitter/nvim-treesitter-context',
+        opts = {
+            max_lines = 1,
+        },
     },
 
     -- can your VSC**e do that? ψ(｀∇´)ψ
