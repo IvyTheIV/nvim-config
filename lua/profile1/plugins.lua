@@ -179,4 +179,15 @@ require('lazy').setup({
     -- can your VSC**e do that? ψ(｀∇´)ψ
     'eandrju/cellular-automaton.nvim',
 
+    {
+        'NvChad/nvim-colorizer.lua',
+        opts = {
+            filetypes = { "*" },
+            user_default_options = {
+                names = false,
+                mode = 'background',
+            },
+        }
+    },
+
 }, {})
