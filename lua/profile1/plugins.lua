@@ -14,11 +14,11 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
 
-    {
-        -- Smooth scrolling. This is a must-have
-        'karb94/neoscroll.nvim',
-        opts = {},
-    },
+    -- {
+    --     -- Smooth scrolling. This is a must-have
+    --     'karb94/neoscroll.nvim',
+    --     opts = {},
+    -- },
 
     -- Git related plugins
     -- 'tpope/vim-fugitive',
