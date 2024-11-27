@@ -29,10 +29,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     pattern = '*',
 })
 
-vim.keymap.set("n", "[c", function()
-  require("treesitter-context").go_to_context()
-end, { silent = true })
-
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })

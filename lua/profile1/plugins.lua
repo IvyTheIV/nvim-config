@@ -14,16 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
 
-    -- {
-    --     -- Smooth scrolling. This is a must-have
-    --     'karb94/neoscroll.nvim',
-    --     opts = {},
-    -- },
-
-    -- Git related plugins
-    -- 'tpope/vim-fugitive',
-    -- 'tpope/vim-rhubarb',
-
     -- Detect tabstop and shiftwidth automatically
     -- 'tpope/vim-sleuth',
 
@@ -68,13 +58,6 @@ require('lazy').setup({
             -- Adds a number of user-friendly snippets
             -- 'rafamadriz/friendly-snippets',
         },
-    },
-
-    {
-        -- Automatically match parentheses
-        'windwp/nvim-autopairs',
-        event = "InsertEnter",
-        opts = {},
     },
 
     -- Useful plugin to show you pending keybinds.
@@ -167,17 +150,6 @@ require('lazy').setup({
         },
         build = ':TSUpdate',
     },
-
-    {
-        -- Show current context
-        'nvim-treesitter/nvim-treesitter-context',
-        opts = {
-            max_lines = 1,
-        },
-    },
-
-    -- can your VSC**e do that? ψ(｀∇´)ψ
-    'eandrju/cellular-automaton.nvim',
 
     {
         'NvChad/nvim-colorizer.lua',

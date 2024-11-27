@@ -31,4 +31,6 @@ vim.g.netrw_bufsettings = "noma nomod nu nobl nowrap ro rnu"
 
 -- kanagawa color scheme <3
 vim.cmd("colorscheme kanagawa-wave");
+
 vim.lsp.set_log_level("ERROR")
+vim.cmd("au BufRead,BufNewFile *.vert,*.frag,*.comp set filetype=glsl")
